@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="026f6ca3-86d0-43f2-8089-59665d70627a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/AP 11/app/src/main/java/com/example/courses/MainActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AP 11/app/src/main/java/com/example/courses/data/DataSources.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AP 11/app/src/main/java/com/example/courses/model/Topics.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AP 11/app/src/main/java/com/example/courses/ui/theme/Color.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AP 11/app/src/main/java/com/example/courses/ui/theme/Theme.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AP 11/app/src/main/java/com/example/courses/ui/theme/Type.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AP 11/app/src/main/res/drawable/image1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AP 11/app/src/main/res/drawable/image10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AP 11/app/src/main/res/drawable/image2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AP 11/app/src/main/res/drawable/image3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AP 11/app/src/main/res/drawable/image4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AP 11/app/src/main/res/drawable/image5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AP 11/app/src/main/res/drawable/image6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AP 11/app/src/main/res/drawable/image7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AP 11/app/src/main/res/drawable/image8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AP 11/app/src/main/res/drawable/image9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AP 11/app/src/main/res/drawable/image_.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AP 11/app/src/main/res/values/dimen.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AP 11/app/src/main/res/values/themes.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "VipulNerd"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/VipulNerd/Tip-Calc_App.git",
+    "accountId": "5d16b35b-8068-4a40-875d-8207dddab4b7"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 5
+}]]></component>
+  <component name="ProjectId" id="2s2T6RcMRBrHpnvwBQ7ucXVF2d2" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/vamhaze/Documents/Android Apps",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="026f6ca3-86d0-43f2-8089-59665d70627a" name="Changes" comment="" />
+      <created>1737652493554</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1737652493554</updated>
+    </task>
+    <servers />
+  </component>
+</project>
