@@ -32,11 +32,18 @@ import androidx.annotation.StringRes
 import androidx.compose.animation.animateContentSize
 import androidx.compose.animation.core.Spring
 import androidx.compose.animation.core.spring
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
+import androidx.compose.material3.CardDefaults
+import androidx.compose.material3.CenterAlignedTopAppBar
+import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.setValue
+import androidx.compose.ui.Alignment
 import com.example.wellness.model.DataSource
 
 class MainActivity : ComponentActivity() {
@@ -53,19 +60,29 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun WellnessApp() {
+    Scaffold(
+        modifier = Modifier.padding(bottom = 16.dp),
+        topBar = {
+            TopBar(modifier = Modifier)
+        }
+    ) {
         WellnessGrid(
             wellList = DataSource.WellnessQuote(),
             modifier = Modifier
+                .padding(it)
         )
+    }
 }
 
 
 
 @Composable
 fun WellnessGrid(wellList: List<Wellness>, modifier: Modifier){
-    LazyColumn {
+    LazyColumn(modifier = Modifier,
+        verticalArrangement = Arrangement.spacedBy(36.dp)) {
         items(wellList) { well ->
-            QuoteCard(well = well, modifier = Modifier)
+            QuoteCard(well = well, modifier = Modifier
+                .padding(bottom = 16.dp, top=16.dp).fillMaxWidth())
         }
     }
 }
@@ -73,7 +90,8 @@ fun WellnessGrid(wellList: List<Wellness>, modifier: Modifier){
 @Composable
 fun QuoteCard(well: Wellness, modifier: Modifier){
     var expanded by remember { mutableStateOf(false) }
-    Card{
+    Card(elevation = CardDefaults.cardElevation(defaultElevation = 2.dp),
+        modifier = Modifier){
         Column(
             modifier = Modifier
                 .animateContentSize(
@@ -82,11 +100,13 @@ fun QuoteCard(well: Wellness, modifier: Modifier){
                         stiffness = Spring.StiffnessMedium
                     )
                 )
+                .padding(16.dp)
         ) {
-            Row{
+            Row(modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement =  Arrangement.SpaceBetween){
                 Text(
                     text = stringResource( well.titleRes),
-                    modifier = Modifier
+                    modifier = Modifier.weight(1f)
                 )
                 WellnessButton(
                     expanded = expanded,
@@ -99,13 +119,14 @@ fun QuoteCard(well: Wellness, modifier: Modifier){
             Image(
                 painter = painterResource(well.imageRes),
                 contentDescription = null,
-                contentScale = ContentScale.Crop
+                contentScale = ContentScale.Crop,
+                modifier = Modifier.fillMaxWidth()
             )
             Spacer(modifier = Modifier.height(16.dp))
             if(expanded){
                 WellnessDes(
                     quoteId = (well.quote),
-                    modifier = Modifier
+                    modifier = Modifier.height(8.dp)
                 )
             }
 
@@ -144,6 +165,20 @@ fun WellnessButton(
             tint = MaterialTheme.colorScheme.secondary
         )
     }
+}
+
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+fun TopBar(modifier: Modifier){
+    CenterAlignedTopAppBar(
+        title = {
+            Text(
+                text = stringResource(R.string.app_name),
+                style = MaterialTheme.typography.displayLarge
+            )
+        },
+        modifier = Modifier
+    )
 }
 
 @Preview(showBackground = true)

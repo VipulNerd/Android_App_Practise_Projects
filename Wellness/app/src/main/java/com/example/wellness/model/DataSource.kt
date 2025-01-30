@@ -11,7 +11,32 @@ object DataSource {
                 titleRes = (R.string.title1),
                 quote = (R.string.quote1),
                 imageRes = (R.drawable.culinary)
-            )
+            ),
+           Wellness(
+               titleRes = (R.string.title1),
+               quote = (R.string.quote1),
+               imageRes = (R.drawable.culinary)
+           ),
+           Wellness(
+               titleRes = (R.string.title1),
+               quote = (R.string.quote1),
+               imageRes = (R.drawable.culinary)
+           ),
+           Wellness(
+               titleRes = (R.string.title1),
+               quote = (R.string.quote1),
+               imageRes = (R.drawable.culinary)
+           ),
+           Wellness(
+               titleRes = (R.string.title1),
+               quote = (R.string.quote1),
+               imageRes = (R.drawable.culinary)
+           ),
+           Wellness(
+               titleRes = (R.string.title1),
+               quote = (R.string.quote1),
+               imageRes = (R.drawable.culinary)
+           )
         )
     }
 }
