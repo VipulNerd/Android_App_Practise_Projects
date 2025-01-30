@@ -64,7 +64,7 @@ fun WellnessApp() {
     Scaffold(
         modifier = Modifier,
         topBar = {
-            TopBar(modifier = Modifier.padding(8.dp))
+            TopBar(modifier = Modifier)
         }
     ) {
         WellnessGrid(
@@ -92,7 +92,7 @@ fun WellnessGrid(wellList: List<Wellness>, modifier: Modifier){
 fun QuoteCard(well: Wellness, modifier: Modifier){
     var expanded by remember { mutableStateOf(false) }
     Card(elevation = CardDefaults.cardElevation(defaultElevation = 2.dp),
-        modifier = Modifier){
+        modifier = Modifier.padding(top = 90.dp, bottom = 8.dp)){
         Column(
             modifier = Modifier
                 .animateContentSize(
