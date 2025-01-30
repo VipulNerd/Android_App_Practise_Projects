@@ -32,6 +32,7 @@ import androidx.annotation.StringRes
 import androidx.compose.animation.animateContentSize
 import androidx.compose.animation.core.Spring
 import androidx.compose.animation.core.spring
+import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -61,9 +62,9 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun WellnessApp() {
     Scaffold(
-        modifier = Modifier.padding(bottom = 16.dp),
+        modifier = Modifier,
         topBar = {
-            TopBar(modifier = Modifier)
+            TopBar(modifier = Modifier.padding(8.dp))
         }
     ) {
         WellnessGrid(
@@ -82,7 +83,7 @@ fun WellnessGrid(wellList: List<Wellness>, modifier: Modifier){
         verticalArrangement = Arrangement.spacedBy(36.dp)) {
         items(wellList) { well ->
             QuoteCard(well = well, modifier = Modifier
-                .padding(bottom = 16.dp, top=16.dp).fillMaxWidth())
+                .padding(bottom = 16.dp, top=8.dp).fillMaxWidth())
         }
     }
 }
@@ -174,12 +175,13 @@ fun TopBar(modifier: Modifier){
         title = {
             Text(
                 text = stringResource(R.string.app_name),
-                style = MaterialTheme.typography.displayLarge
+                style = MaterialTheme.typography.displayMedium
             )
         },
         modifier = Modifier
     )
 }
+
 
 @Preview(showBackground = true)
 @Composable
