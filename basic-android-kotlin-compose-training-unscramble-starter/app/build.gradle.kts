@@ -80,6 +80,9 @@ dependencies {
     implementation(project(":app"))
     implementation(project(":app"))
     implementation(project(":app"))
+    implementation(project(":app"))
+    implementation(project(":app"))
+    implementation(project(":app"))
     debugImplementation("androidx.compose.ui:ui-test-manifest")
     debugImplementation("androidx.compose.ui:ui-tooling")
 }
